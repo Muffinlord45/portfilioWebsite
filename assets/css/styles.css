@@ -22,3 +22,9 @@ main {
   flex-grow: 1;
 }
 
+.border-bottom {
+  /*border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;*/
+  border-width: 3px!important;
+  border-color: rgb(108,117,125);
+}
+
