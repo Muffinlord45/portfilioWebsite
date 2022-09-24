@@ -1,3 +1,14 @@
+:root {
+  --navbar-active-color: #E76F51;
+  --navbar-hover-color: #2A9D8F;
+  --navbar-default-color: #264653;
+  --color1: #264653;
+  --color2: #2A9D8F;
+  --color3: #E9C46A;
+  --color4: #F4A261;
+  --color5: #E76F51;
+}
+
 h1 {
   font-family: 'Vollkorn SC';
 }
@@ -9,6 +20,7 @@ body {
 
 h2 {
   font-family: 'Vollkorn';
+  color: #2A9D8F;
 }
 
 .btn {
@@ -31,7 +43,7 @@ main {
 .border-bottom {
   border-width: 2px!important;
   border-bottom-style: solid;
-  border-color: var(--bs-gray)!important;
+  border-color: var(--color1)!important;
 }
 
 .img-me {
@@ -46,5 +58,17 @@ main {
 .carousel {
   width: 636px;
   height: 450px;
+}
+
+.nav-link.active {
+  color: var(--navbar-active-color)!important;
+}
+
+.nav-link:focus, .nav-link:hover {
+  color: var(--navbar-hover-color);
+}
+
+.nav-link {
+  color: var(--navbar-default-color);
 }
 
