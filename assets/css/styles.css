@@ -15,6 +15,12 @@ h2 {
   background: rgb(244,162,97);
   background: linear-gradient(90deg, rgba(244,162,97,1) 0%, rgba(231,111,81,1) 100%);
   border-radius: 20px;
+  font-size: medium;
+  align-items: center;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: var(--bs-black);
 }
 
 main {
@@ -23,8 +29,22 @@ main {
 }
 
 .border-bottom {
-  /*border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;*/
-  border-width: 3px!important;
-  border-color: rgb(108,117,125);
+  border-width: 2px!important;
+  border-bottom-style: solid;
+  border-color: var(--bs-gray)!important;
+}
+
+.img-me {
+  /*width: 200px;*/
+  /*background-image: url('../../assets/img/me.jpg');*/
+  /*height: 300px;*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
+}
+
+.carousel {
+  width: 636px;
+  height: 450px;
 }
 
