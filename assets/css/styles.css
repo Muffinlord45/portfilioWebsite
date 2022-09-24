@@ -11,6 +11,28 @@
 
 h1 {
   font-family: 'Vollkorn SC';
+  overflow: hidden;
+  text-align: center;
+}
+
+h1:before, h1:after {
+  background-color: var(--color1);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h1:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 body {
@@ -55,11 +77,6 @@ main {
   /*background-position: center;*/
 }
 
-.carousel {
-  width: 636px;
-  height: 450px;
-}
-
 .nav-link.active {
   color: var(--navbar-active-color)!important;
 }
@@ -70,5 +87,41 @@ main {
 
 .nav-link {
   color: var(--navbar-default-color);
+}
+
+.img-wrapper {
+  display: inline-block;
+  position: relative;
+  background: #ffffff;
+  aspect-ratio: 1.2/1;
+}
+
+.img-text {
+  background: rgba(0,0,0,0.3);
+  color: #ffffff;
+  font-family: 'Vollkorn';
+  font-size: 36px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  text-align: center;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.img-wrapper:hover .img-text {
+  opacity: 1;
 }
 
