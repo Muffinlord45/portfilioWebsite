@@ -2,11 +2,11 @@
   --navbar-active-color: #E76F51;
   --navbar-hover-color: #2A9D8F;
   --navbar-default-color: #264653;
-  --color1: #264653;
-  --color2: #2A9D8F;
-  --color3: #E9C46A;
-  --color4: #F4A261;
-  --color5: #E76F51;
+  --color1: #733380;
+  --color2: #b63378;
+  --color3: #e74860;
+  --color4: #fe763c;
+  --color5: #f9ac04;
 }
 
 h1 {
@@ -42,12 +42,11 @@ body {
 
 h2 {
   font-family: 'Vollkorn';
-  color: #2A9D8F;
+  color: var(--color1);
 }
 
 .btn {
-  background: rgb(244,162,97);
-  background: linear-gradient(90deg, rgba(244,162,97,1) 0%, rgba(231,111,81,1) 100%);
+  background: linear-gradient(90deg, var(--color5) 0%, var(--color4) 100%);
   border-radius: 20px;
   font-size: medium;
   align-items: center;
@@ -68,15 +67,6 @@ main {
   border-color: var(--color1)!important;
 }
 
-.img-me {
-  /*width: 200px;*/
-  /*background-image: url('../../assets/img/me.jpg');*/
-  /*height: 300px;*/
-  /*background-size: cover;*/
-  /*background-repeat: no-repeat;*/
-  /*background-position: center;*/
-}
-
 .nav-link.active {
   color: var(--navbar-active-color)!important;
 }
@@ -89,7 +79,7 @@ main {
   color: var(--navbar-default-color);
 }
 
-.img-wrapper {
+.img-wrapper-car {
   display: inline-block;
   position: relative;
   background: #ffffff;
@@ -121,7 +111,7 @@ main {
   height: 100%;
 }
 
-.img-wrapper:hover .img-text {
+.img-wrapper-car:hover .img-text {
   opacity: 1;
 }
 
