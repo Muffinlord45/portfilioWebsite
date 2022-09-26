@@ -6,4 +6,5 @@ document.querySelector('.theme-toggle-button').addEventListener('click', () => {
     
     document.getElementById("meDark").classList.toggle('visually-hidden')
     document.getElementById("meLight").classList.toggle('visually-hidden')
+    
 })

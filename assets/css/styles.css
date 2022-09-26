@@ -12,7 +12,7 @@ body {
   --tertiary-color: var(--color5);
   --background-color: white;
   --text-color: black;
-  --button-text-color: var(--background-color);
+  --button-text-color: var(--text-color);
   --transition-delay: 0.2s;
   font-family: 'Comfortaa';
   height: 100vh;
@@ -24,37 +24,36 @@ body {
 body.dark {
   --primary-color: var(--color1);
   --secondary-color: var(--color2);
-  --button-text-color: white;
+  /*--button-text-color: black;*/
   --text-color: white;
   --background-color: #333;
 }
 
 h1 {
   font-family: 'Vollkorn SC';
-  overflow: hidden;
+  position: relative;
   text-align: center;
   color: var(--primary-color);
   align-items: start;
+  margin: 0.7em auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 h1:before, h1:after {
-  background-color: var(--color1);
   content: "";
   display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
   width: 50%;
-}
-
-h1:before {
-  right: 0.5em;
-  margin-left: -50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 2px solid;
 }
 
 h1:after {
-  left: 0.5em;
-  margin-right: -50%;
+  margin: 0 -55% 0 .5em;
+}
+
+h1:before, h1:after content: ""; display: inline-block; width: 50%; margin: 0 .5em 0 -55%; vertical-align: middle; border-bottom: 1px solid; h1:after margin: 0 -55% 0 .5em; {
 }
 
 h2 {
@@ -80,9 +79,6 @@ h2 {
   box-shadow: var(--bs-btn-box-shadow-rgb)!important;
 }
 
-.theme-toggle-button {
-}
-
 main {
   padding: 1rem;
   flex-grow: 1;
@@ -91,7 +87,13 @@ main {
 .border-bottom {
   border-width: 2px!important;
   border-bottom-style: solid;
-  border-color: var(--color1)!important;
+  border-color: var(--primary-color)!important;
+}
+
+.border-top {
+  border-width: 2px!important;
+  border-top-style: solid;
+  border-color: var(--primary-color)!important;
 }
 
 .nav-link.active {
@@ -142,5 +144,9 @@ main {
 
 .img-wrapper-car:hover .img-text {
   opacity: 1;
+}
+
+svg.socialMediaIcon {
+  color: var(--text-color);
 }
 
