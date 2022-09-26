@@ -1,14 +1,9 @@
 :root {
-  --navbar-active-color: #E76F51;
-  --navbar-hover-color: #2A9D8F;
-  --navbar-default-color: #264653;
-  --color1: #733380;
-  --color2: #b63378;
+  --color1: #bb86fc;
+  --color2: #db00b6;
   --color3: #e74860;
   --color4: #fe763c;
   --color5: #f9ac04;
-  /*--background-color: white;*/
-  /*--text-color: black;*/
 }
 
 body {
@@ -18,10 +13,12 @@ body {
   --background-color: white;
   --text-color: black;
   --button-text-color: var(--background-color);
+  --transition-delay: 0.2s;
   font-family: 'Comfortaa';
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--background-color);
   color: var(--text-color);
+  transition: var(--transition-delay);
 }
 
 body.dark {
@@ -36,6 +33,8 @@ h1 {
   font-family: 'Vollkorn SC';
   overflow: hidden;
   text-align: center;
+  color: var(--primary-color);
+  align-items: start;
 }
 
 h1:before, h1:after {
@@ -60,7 +59,7 @@ h1:after {
 
 h2 {
   font-family: 'Vollkorn';
-  color: var(--color1);
+  color: var(--secondary-color);
 }
 
 .btn {
@@ -69,14 +68,19 @@ h2 {
   border-radius: 20px;
   font-size: medium;
   align-items: center;
-  border: none;
   padding-left: 20px;
   padding-right: 20px;
   transition: 0.1s;
+  border: none;
+  transform: scale(1);
 }
 
 .btn:hover, .btn:focus {
   transform: scale(1.05);
+  box-shadow: var(--bs-btn-box-shadow-rgb)!important;
+}
+
+.theme-toggle-button {
 }
 
 main {
@@ -91,15 +95,17 @@ main {
 }
 
 .nav-link.active {
-  color: var(--navbar-active-color)!important;
+  color: var(--primary-color)!important;
 }
 
 .nav-link:focus, .nav-link:hover {
-  color: var(--navbar-hover-color);
+  color: var(--secondary-color);
+  transform: scale(1.05);
 }
 
 .nav-link {
-  color: var(--navbar-default-color);
+  color: var(--text-color);
+  transition: 0.1s;
 }
 
 .img-wrapper-car {
