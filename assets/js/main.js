@@ -1,11 +1,15 @@
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.toggle('dark')
+}
+
 document.querySelector('.theme-toggle-button').addEventListener('click', () => {
     
-    if(localStorage.theme == 'light'){   
+    if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){   
         localStorage.setItem('theme', 'dark');
         document.body.classList.toggle('dark');
         document.body.classList.toggle('light');
     }
-    else if(localStorage.theme == 'dark'){
+    else{
         localStorage.setItem('theme', 'light');
         document.body.classList.toggle('dark');
         document.body.classList.toggle('light');
@@ -18,3 +22,5 @@ document.querySelector('.theme-toggle-button').addEventListener('click', () => {
     document.getElementById("meLight").classList.toggle('visually-hidden')
     
 })
+
+
