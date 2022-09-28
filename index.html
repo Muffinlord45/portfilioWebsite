@@ -3,6 +3,16 @@
 
 <head>
     <meta charset="utf-8">
+<head>
+  <!-- meta, title etc... -->
+
+  <script>
+  // Render blocking JS:
+  if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
+  </script>
+
+  <!-- link, style, etc... -->
+</head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>portfilo website</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -36,7 +46,7 @@
                     <p style="font-size: 18px;">First Year Engineering Student<br>at McMaster University<br><br><br><br>This website is&nbsp;👷🚧UNDER CONSTRUCTION🚧👷<br><br>There are pictures in the portfolio but the links aren't active yet!</p>
                 </div>
                 <div class="col-md-6">
-                    <div class="img-wrapper"><img id="meDark" class="visually-hidden" src="assets/img/me3.jpg" style="border-radius: 50%;width: 500px;"></div>
+                    <div class="img-wrapper"><img id="meDark" src="assets/img/me3.jpg" style="border-radius: 50%;width: 500px;"></div>
                     <div class="img-wrapper"><img id="meLight" src="assets/img/me4.jpg" style="width: 500px;border-radius: 50%;"></div>
                 </div>
             </div>
