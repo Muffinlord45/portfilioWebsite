@@ -23,11 +23,11 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body class="d-flex flex-column flex-grow-1"><div id="navigation"></div>
+<body class="d-flex flex-column flex-grow-1"><div id="footer"></div>
 
 <script>
 $(function() {
-    $("#navigation").load("navigation.html");
+    $("#footer").load("footer.html");
 });
 </script>
 
@@ -44,8 +44,14 @@ $(function() {
                 </div>
             </div>
         </div>
-    </main><app-footer></app-footer>
-<script src="components.js"></script>
+    </main><div id="navigation"></div>
+
+<script>
+$(function() {
+    $("#navigation").load("navbar.html");
+});
+</script>
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
