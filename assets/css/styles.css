@@ -11,7 +11,7 @@ body {
   font-family: 'Comfortaa';
   height: 100vh;
   transition: var(--transition-delay);
-  background-color: #333;
+  background: #333;
   color: var(--text-color);
 }
 
@@ -23,7 +23,7 @@ body.light {
   --h1-color: var(--color3);
   --h2-color: var(--color4);
   --text-color: black;
-  background-color: white;
+  background: white;
   --buton-text-color: var(--text-color);
 }
 
@@ -31,7 +31,7 @@ body.dark {
   --primary-color: var(--color1);
   --secondary-color: var(--color2);
   --text-color: white;
-  background-color: #333;
+  --background-color: #333;
   --h1-color: var(--color1);
   --h2-color: white;
 }
