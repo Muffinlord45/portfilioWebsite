@@ -19,7 +19,7 @@ body {
   font-family: 'Comfortaa';
   height: 100vh;
   transition: var(--transition-delay);
-  background: black;
+  background-color: black;
 }
 
 body.light {
