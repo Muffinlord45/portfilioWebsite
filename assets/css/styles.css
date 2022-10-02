@@ -18,9 +18,13 @@ body {
   --transition-delay: 0.2s;
   font-family: 'Comfortaa';
   height: 100vh;
+  transition: var(--transition-delay);
+  background: black;
+}
+
+body.light {
   background-color: var(--background-color);
   color: var(--text-color);
-  transition: var(--transition-delay);
 }
 
 body.dark {
