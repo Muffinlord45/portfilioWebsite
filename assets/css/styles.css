@@ -12,6 +12,7 @@ body {
   height: 100vh;
   transition: var(--transition-delay);
   background-color: #333;
+  color: var(--text-color);
 }
 
 body.light {
@@ -57,9 +58,6 @@ h1:before, h1:after {
 
 h1:after {
   margin: 0 -55% 0 .5em;
-}
-
-h1:before, h1:after content: ""; display: inline-block; width: 50%; margin: 0 .5em 0 -55%; vertical-align: middle; border-bottom: 1px solid; h1:after margin: 0 -55% 0 .5em; {
 }
 
 h2 {
