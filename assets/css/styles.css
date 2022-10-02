@@ -60,6 +60,9 @@ h1:after {
   margin: 0 -55% 0 .5em;
 }
 
+h1:before, h1:after content: ""; display: inline-block; width: 50%; margin: 0 .5em 0 -55%; vertical-align: middle; border-bottom: 1px solid; h1:after margin: 0 -55% 0 .5em; {
+}
+
 h2 {
   font-family: 'Vollkorn';
   color: var(--h2-color);
