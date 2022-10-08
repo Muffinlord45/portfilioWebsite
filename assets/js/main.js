@@ -10,8 +10,8 @@ else{
 
 function switch_to_dark(){
        if(window.location.href == "https://violettides.github.io/"){
-       document.getElementById("meLight").classList.add('visually-hidden');
-       document.getElementById("meDark").classList.remove('visually-hidden');
+       document.getElementById("meLight").classList.add('hidden');
+       document.getElementById("meDark").classList.remove('hidden');
        }
     
     document.body.classList.add('dark');
@@ -20,16 +20,10 @@ function switch_to_dark(){
 
 function switch_to_light(){
     if(window.location.href == "https://violettides.github.io/"){
-       document.getElementById("meLight").classList.remove('visually-hidden');
-       document.getElementById("meDark").classList.add('visually-hidden'); 
+       document.getElementById("meLight").classList.remove('hidden');
+       document.getElementById("meDark").classList.add('hidden'); 
     }
-       
-    
+
     document.body.classList.remove('dark');
     document.body.classList.add('light');
 }
-
-$(window).load(function() {
-  // When the page has loaded
-  $("body").fadeIn(1000);
-});
