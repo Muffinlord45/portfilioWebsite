@@ -28,3 +28,7 @@ function switch_to_light(){
     document.body.classList.remove('dark');
     document.body.classList.add('light');
 }
+
+$( document ).ready(function() {
+    $('body').show()
+});
