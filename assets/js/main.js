@@ -29,6 +29,7 @@ function switch_to_light(){
     document.body.classList.add('light');
 }
 
-$( document ).ready(function() {
-    $('body').show()
+$(window).load(function() {
+  // When the page has loaded
+  $("body").fadeIn(2000);
 });
