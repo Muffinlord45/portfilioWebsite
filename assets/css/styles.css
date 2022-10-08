@@ -14,7 +14,7 @@ body {
   background-color: black;
   background: var(--background-color);
   color: var(--text-color);
-  display: none;
+  display: none!important;
 }
 
 body.light {
@@ -27,7 +27,7 @@ body.light {
   --text-color: black;
   --background-color: white;
   --buton-text-color: var(--text-color);
-  /: var(--text-color);
+  /*display: none;*/
 }
 
 body.dark {
@@ -37,6 +37,7 @@ body.dark {
   --background-color: #333;
   --h1-color: var(--color1);
   --h2-color: white;
+  /*display: none;*/
 }
 
 .navbar-nav .nav-link.active {

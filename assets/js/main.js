@@ -31,5 +31,5 @@ function switch_to_light(){
 
 $(window).load(function() {
   // When the page has loaded
-  $("body").fadeIn(2000);
+  $("body").fadeIn(1000);
 });
