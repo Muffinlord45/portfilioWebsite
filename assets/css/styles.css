@@ -103,12 +103,12 @@ main {
   border-bottom: solid 2px var(--primary-color);
 }
 
-.footer {
-  margin-top: auto!important;
-}
-
 .footer-border {
   border-top: solid 2px var(--primary-color);
+}
+
+.footer {
+  /*flex-shrink: 0;*/
 }
 
 .nav-link:focus, .nav-link:hover {
