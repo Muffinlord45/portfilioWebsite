@@ -108,7 +108,8 @@ main {
 }
 
 .footer {
-  /*flex-shrink: 0;*/
+  position: sticky;
+  top: 100%;
 }
 
 .nav-link:focus, .nav-link:hover {
