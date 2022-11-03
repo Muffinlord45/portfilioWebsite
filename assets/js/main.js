@@ -50,7 +50,7 @@ class MyHeader extends HTMLElement {
 
 customElements.define('my-header', MyHeader)
 
-class myFooter extends HTMLElement {
+class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `<footer class="text-center d-flex d-xxl-flex footer footer-border" style="margin-right: 40px;margin-left: 40px;padding-top: 8px;padding-right: 12px;padding-bottom: 8px;padding-left: 12px;">
         <ul class="list-inline text-start py-1" style="margin-top: 10px;margin-bottom: 10px;">
