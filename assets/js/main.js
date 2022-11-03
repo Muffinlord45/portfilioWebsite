@@ -48,7 +48,7 @@ class MyHeader extends HTMLElement {
     }
 }
 
-customElements.define('my-footer', MyFooter)
+customElements.define('my-header', MyHeader)
 
 class myFooter extends HTMLElement {
     connectedCallback() {
