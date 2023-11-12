@@ -4,7 +4,7 @@
 
 ## Overview
 
-Welcome to the GitHub repository for Ross Anderson's personal website. This repository contains the source code and assets for Ross's personal website, where he showcases his portfolio, projects, and shares information about himself.
+Welcome to the GitHub repository for my portfolio website! This repository contains the source code and assets for my website, where I showcase my resume, projects, and some basic info about myself.
 
 ## Table of Contents
 
@@ -16,10 +16,10 @@ Welcome to the GitHub repository for Ross Anderson's personal website. This repo
 
 ## Features
 
-- **Portfolio:** Showcase Ross's work and projects.
-- **About Ross:** Share information about Ross, his skills, and interests.
-- **Contact:** Provide a way for visitors to get in touch with Ross.
-- **Responsive Design:** Ensure a seamless experience across various devices.
+- **About Me:** Learn more about me, my skills, and interests.
+- **Portfolio:** Explore my work and projects
+- **Contact:** Reach out to me easily.
+- **Responsive Design:** Enjoy a seamless experience across various devices. This was hell I hate mobile devices >:(
 
 ## Demo
 
