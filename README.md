@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-![Ross Anderson's Personal Website](assets/img/demo.png?)
+![Ross Anderson's Personal Website](assets/img/demo.png)
 
 ## Overview
 
